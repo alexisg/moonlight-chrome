@@ -774,6 +774,12 @@ function updateDefaultBitrate() {
         } else { // 720, 60fps
             $('#bitrateSlider')[0].MaterialSlider.change('10');
         }
+    } else if (res === "2560:1440") {
+        if (frameRate === "30") { // 1440p, 30fps
+            $('#bitrateSlider')[0].MaterialSlider.change('30');
+        } else { // 1440p, 60fps
+            $('#bitrateSlider')[0].MaterialSlider.change('60');
+        }
     } else if (res === "3840:2160") {
         if (frameRate === "30") { // 2160p, 30fps
             $('#bitrateSlider')[0].MaterialSlider.change('40');
